@@ -1,0 +1,103 @@
+
+.about-page {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 7rem;
+}
+
+.about-page .company-card{
+    display: flex;
+    width: 100%;
+    flex: 1;
+}
+
+.about-page .company-card > div {
+    height: 100%;
+    padding: 0.5rem;
+}
+.about-page h1{
+    text-align: center;
+    background-color: var(--tertiary);
+    border-radius: 0.5rem;
+    color: var(--gc);
+}
+
+.about-page .desc {
+    width: 100%;
+}
+.about-page p{
+    margin: 0.2rem;
+    text-align: center;
+}
+.about-page .company-card .image {
+    width: 45rem;
+    height: 100%;
+}
+.about-page .company-card .image .underimage{
+    display: none;
+}
+.about-page .company-card .image img{
+    width: 100%;
+    border-radius: 0.5rem;
+    outline: 1px solid var(--tertiary);
+}
+
+/* history */
+.history-card {
+    flex: 1;
+}
+.history-card .list-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.history-card .list-cards .first {
+    flex: 1;
+    
+}
+.history-card .list-cards .second {
+    
+    flex: 2;
+}
+.history-card .list-cards .card .image{
+    width: 100%;
+    margin: 0.5rem;
+}
+
+.history-card .list-cards .card .image img{
+    width: 100%;
+    border-radius: 0.5rem;
+    outline: 1px solid var(--tertiary);
+}
+
+.history-card .list-cards .card .image-pile{
+    width: 20rem;
+    margin: 0.5rem;
+}
+.history-card .list-cards .card .image-pile img{
+    width: 100%;
+    border-radius: 0.5rem;
+    outline: 1px solid var(--tertiary);
+}
+
+.history-card .bottom {
+    width: 100%;
+    
+    margin: 0.5rem;
+}
+.history-card .bottom img{
+    width: 100%;
+    
+    border-radius: 0.5rem;
+    outline: 1px solid var(--tertiary);
+}
+
+@media (max-width: 1040px) {
+    .about-page .company-card .image .underimage{
+        display: block;
+    }
+    .about-page .company-card .underdesc{
+        display: none;
+    }
+}

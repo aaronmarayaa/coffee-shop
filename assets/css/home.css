@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jacquard+24+Charted&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 .home {
-    padding: 1rem;
+    padding: 5rem 1rem;
 }
 
 .home-page {
@@ -15,6 +15,7 @@
 .home-page .cards {
     flex: 1;
     width: 100%;
+    padding: 0 1rem;
 }
 
 .home-page .cards .top {
@@ -23,7 +24,6 @@
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
     outline: 2px solid var(--tertiary);
-    
 }
 
 .home-page .cards .top img {
@@ -59,6 +59,7 @@
 
 .coffee-card .discover {
     background-color: var(--primary);
+    color: var(--gc);
     padding: 1rem;
     margin-top: 0.5rem;
     border-radius: 0.5rem;
@@ -71,8 +72,7 @@
     transform: scale(1.1);
 }
 
-.home-page
-.monolith {
+.home-page .monolith {
     background-color: var(--tertiary);
     display: flex;
     flex-wrap: wrap;
@@ -80,22 +80,19 @@
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
-    padding: 1rem;
-    
+    padding: 1rem;    
 }
 
-.home-page
-.monolith > div {
+.home-page .monolith > div {
     margin-top: 1rem;
 }
 
-.home-page
-.monolith .coffee-img img {
+.home-page .monolith .coffee-img img {
     width: 10rem;
     border-radius: 0.5rem;
+    box-shadow:  -10px 10px 10px #0e0a1d;
 }
-.home-page
-.monolith .coffee-desc {
+.home-page .monolith .coffee-desc {
     text-align: center;
     padding: 0.5rem;
     background-color: rgb(81, 81, 81);

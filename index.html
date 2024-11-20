@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Avenue</title>
+
+        <link rel="icon" href="assets/media/latte-icon.png">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+        
+        <link rel="stylesheet" href="assets/css/home.css">
+        
+        <link rel="stylesheet" href="assets/css/about.css">
+
+        <link rel="stylesheet" href="assets/css/reviews.css">
+    </head>
+    <body>
+        <div class="navbar"> <!--//tier-zero-->
+            <div class="burger" onclick="toggleMenu()">&#9776;</div>
+            <div class="title">Coffee Avenue.</div><!--title    -->
+            <nav id="navMenu" class="navMenu"> <!--card-->
+                <ul>
+                    <li><a id="navhome" onclick="activeHome()"   href="#home" class="nav-link active">Home</a></li>
+                    <li><a id="navabout" onclick="activeAbout()"  href="#about" class="nav-link">About</a></li>
+                    <li><a id="navshop" onclick="activeShop()"  href="#shop" class="nav-link">Shop</a></li>
+                    <li><a id="navreviews" onclick="activeReviews()"  href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a id="navcontacts" onclick="activeContacts()"  class="nav-link">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <main>
+            <section id="home" class="home">
+                <div class="home-page">
+                    <div class="cards">
+                        <div class="top">
+                            <img src="assets/media/zzz.jpg" alt="">
+                        </div>
+                        <div class="tag">
+                            <div class="tagline">
+                                <h1>
+                                    Brewed for Energy, Savored for Joy.
+                                </h1>
+                            </div>
+                            <div class="coffee-card">
+                                <div class="monolith">
+                                    <div class="coffee-name">
+                                        <h2>Espresso</h2>
+                                    </div>
+                                    <div class="coffee-img">
+                                        <img src="assets/media/coffee.jpg" alt="coffee">
+                                    </div>
+                                    <div class="coffee-desc">
+                                        A rich and bold coffee brewed by forcing hot water through finely-ground coffee 
+                                        beans under high pressure. Known for its concentrated flavor and velvety crema, 
+                                        espresso serves as the base for many popular coffee drinks like lattes and cappuccinos.
+                                    </div>
+                                </div>
+                                <div class="discover">
+                                    Discover Taste
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                       
+                    <div class="featured-container">
+                        <h1>Featured Beverages</h1>
+                        <ul>
+                            <li>Salted Pretzel Cocoa</li>
+                            <li>Peppermint Mocha Latte</li>
+                            <li>Toffee Nut Crunch Latte</li>
+                        </ul>
+                        <div class="featured">
+                            <div>
+                                <img src="assets/media/featureddesserts.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/media/featuredbeverages.jpg" alt="">
+                            </div>
+                        </div>
+                        <h1>Featured Desserts</h1>
+                        <ul>
+                            <li>Chocolate Crepe Cake</li>
+                            <li>Creamy Pistachio Baklava Cheesecake</li>
+                            <li>Breakfast Monte Cristo</li>
+                            <li>Chocolate Chip Overload Cookie</li>
+                            <li>Berry Crumble Cheesecake</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about">
+                <div class="about-page">
+                    <div class="company-card">
+                        <div class="image">
+                            <img src="assets/media/company.jpg" alt="">
+                            <p class="underdesc">
+                                Our cozy interiors feature rustic wooden accents, soft ambient lighting, and touches of Filipino artistry, creating an atmosphere that feels like a home away from home. Whether you're catching up with friends, working on your next big idea
+                            </p>
+                            <p class="underimage">
+                                From its humble beginnings to becoming a cornerstone of the community, Coffee Avenue remains a testament to tradition, passion, and the enduring love for coffee.
+                                Our cozy interiors feature rustic wooden accents, soft ambient lighting, and touches of Filipino artistry, creating an atmosphere that feels like a home away from home. Whether you're catching up with friends, working on your next big idea
+                            </p>
+                        </div>
+                        <div class="desc">
+                            <h1>About Coffee Avenue</h1>
+                            <p>
+                                Since its establishment in 1981, Coffee Avenue has been a staple of the Philippine coffee culture, bringing people together over warm cups of exceptional coffee. Born out of a passion for great coffee and a deep appreciation for Filipino tradition, the shop has grown from its humble beginnings into a cherished destination for locals and visitors alike.
+                            </p>
+                            <p>
+                                At Coffee Avenue, we take pride in serving coffee made from the finest locally-sourced beans, reflecting the rich and diverse flavors of the Philippines. Each cup is brewed to perfection, creating a harmonious blend of bold taste and inviting aroma. Alongside our signature coffees, we offer a delightful selection of homemade pastries and savory treats that pair perfectly with every sip.
+                            </p>
+                            <p class="underdesc">
+                                From its humble beginnings to becoming a cornerstone of the community, Coffee Avenue remains a testament to tradition, passion, and the enduring love for coffee.
+                                Our cozy interiors feature rustic wooden accents, soft ambient lighting, and touches of Filipino artistry, creating an atmosphere that feels like a home away from home. Whether you're catching up with friends, working on your next big idea
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="history-card">
+                        <div class="list-cards">
+                            <div class="card first">
+                                <div class="image-pile">
+                                    <img src="assets/media/history-coffee.jpg" alt="">
+                                </div>
+                                <h1>Coffee Avenue History</h1>
+                            </div>
+                            <div class="card second">
+                                <div class="image">
+                                    <img src="assets/media/history-image.jpg" alt="">
+                                </div>
+                                <div class="desc">
+                                    <p>
+                                        At Coffee Avenue, every cup tells a story. From the rich, aromatic brews made with locally-sourced Philippine coffee beans to the warm, inviting atmosphere, the shop captures the essence of Filipino hospitality. Whether you're here for a quiet morning ritual or a lively evening chat with friends, Coffee Avenue offers a welcoming space for every moment.
+                                        The shop's signature rustic interiors—featuring wooden furnishings, soft lighting, and touches of local artistry—complement the comforting aroma of freshly brewed coffee and homemade pastries. It's more than just a café; it's a place where memories are made and shared, where coffee isn't just a drink but an experience.
+                                        Step into Coffee Avenue and discover why it has remained a beloved cornerstone of the community since 1981.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <img src="assets/media/history-breakfast.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="reviews" class="reviews">
+                <div class="reviews-page">
+                    <div class="rate-card">
+                        <div class="label"><label for="rate">Leave a Rating</label></div>
+                        <textarea name="rate" id="rate" placeholder="Please Leave a Rating" rows="7"></textarea>
+                        <button>Submit</button>
+                    </div>
+                    <div class="ratings">
+                        <ul>
+                            <li>
+                                <div class="item">
+                                    <div class="name">Monica Paula Pacino</div>
+                                    <div class="star">★★★★★</div>
+                                </div>
+                                <div class="comment">
+                                    <p>Pwede na, wag na sana maulit!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="name">John Omar Nery</div>
+                                    <div class="star">★★★★★</div>
+                                </div>
+                                <div class="comment">
+                                    <p>Five star kase trip ko lang</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="name">Stephanie Velarde</div>
+                                    <div class="star">★★★★★</div>
+                                </div>
+                                <div class="comment">
+                                    <p>👍</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="name">Beverly Sarmiento</div>
+                                    <div class="star">★★★★★</div>
+                                </div>
+                                <div class="comment">
+                                    <p>its okey</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="name">Wella Montegrande</div>
+                                    <div class="star">★★★★★</div>
+                                </div>
+                                <div class="comment">
+                                    <p>hahahaah</p>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+    <script src="assets/js/script.js"></script>
+</html>

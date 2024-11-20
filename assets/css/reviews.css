@@ -1,0 +1,38 @@
+.reviews-page {
+    width: 100%;
+    
+    padding-top: 7rem;
+}
+.reviews-page textarea { 
+    width: 100%;
+    resize: none;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.reviews-page .rate-card .label label{
+    background-color: var(--tertiary);
+    color: var(--gc);
+    padding: 0.5rem;
+    font-size: x-large;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+.reviews-page .rate-card button{
+    background-color: var(--tertiary);
+    padding: 0.5rem;
+    float: right;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--gc);
+    font-size: larger;
+}
+
+.reviews-page .ratings ul li {
+    border-bottom: 1px solid var(--tertiary);
+    padding: 1rem;
+}
+
+.reviews-page .ratings ul li .comment {
+    margin: 1rem;
+}
