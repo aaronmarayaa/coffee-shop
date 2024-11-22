@@ -27,7 +27,8 @@
 }
 .about-page p{
     margin: 0.2rem;
-    text-align: center;
+    text-align: justify;
+    text-indent: 3rem;
 }
 .about-page .company-card .image {
     width: 45rem;
