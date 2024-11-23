@@ -1,0 +1,27 @@
+footer {
+    padding: 3rem;
+}
+
+footer > div {
+    margin: 1rem;
+}
+
+footer .social-media > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .social-media > div img{
+    margin: 1rem;
+    
+}
+
+footer .copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer .copyright > div {
+    margin: 1rem;
+}

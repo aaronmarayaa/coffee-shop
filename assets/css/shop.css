@@ -1,0 +1,69 @@
+.shop {
+    padding-top: 5rem;
+    display: none;
+}
+
+.shop-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem 3rem;
+}
+
+.shop-page > p{
+    font-size: larger;
+    text-indent: 1rem;
+    margin-bottom: 1rem;
+}
+
+.shop-page .product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    background-color: #ece5d8;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    outline: 3px solid var(--tertiary);
+    transition: 400ms;
+}
+
+.shop-page .product-card:hover {
+    transition: 400ms;
+    transform: scale(1.05);
+}
+
+.shop-page .product-card > div{
+    margin: 0.5rem;
+}
+
+.shop-page .product-card .description{
+    margin: 0.5rem;
+    display: flex;
+}
+
+.shop-page .product-card .description .cost{
+    font-weight: bolder;
+    margin: 0.5rem;
+}
+.shop-page .product-card .description .desc{
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.shop-page .product-card .coffee-image img{
+    width: 5rem;
+    border-radius: 0.5rem;
+    outline: 3px solid var(--tertiary);
+}
+.product-card .coffee-image img{
+    width: 100%;
+}
+
+@media (max-width: 1040px) {
+    .shop-page {
+        padding: 0.8rem;
+    }
+}

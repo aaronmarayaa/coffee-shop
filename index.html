@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="assets/css/reviews.css">
 
         <link rel="stylesheet" href="assets/css/shop.css">
+
+        <link rel="stylesheet" href="assets/css/footer.css">
     </head>
     <body>
         <div class="navbar"> <!--//tier-zero-->
@@ -23,11 +25,11 @@
             <div class="title">Coffee Avenue.</div><!--title    -->
             <nav id="navMenu" class="navMenu"> <!--card-->
                 <ul>
-                    <li><a id="navhome" onclick="activeHome()"   href="#home" class="nav-link active">Home</a></li>
-                    <li><a id="navabout" onclick="activeAbout()"  href="#about" class="nav-link">About</a></li>
+                    <li><a id="navhome" onclick="back()"   href="#home" class="nav-link active">Home</a></li>
+                    <li><a id="navabout" onclick="back()"  href="#about" class="nav-link">About</a></li>
                     <li><a id="navshop" onclick="activeShop()"  href="#shop" class="nav-link">Shop</a></li>
-                    <li><a id="navreviews" onclick="activeReviews()"  href="#reviews" class="nav-link">Reviews</a></li>
-                    <li><a id="navcontacts" onclick="activeContacts()"  class="nav-link">Contacts</a></li>
+                    <li><a id="navreviews" onclick="back()"  href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a id="navcontacts" onclick="back()"  class="nav-link">Contacts</a></li>
                 </ul>
             </nav>
         </div>
@@ -152,9 +154,234 @@
 
             <section id="shop" class="shop">
                 <div class="shop-page">
+                    <p>
+                        Welcome to our Coffee Shop! Whether you're a fan of bold espresso, creamy lattes, or something unique like a refreshing cold brew, we have something to satisfy every coffee lover. Explore our menu, discover your new favorite blend, and enjoy the perfect cup brewed just for you.
+                    </p>
                     <div class="product-card">
-                        
+                        <div class="coffee-name">
+                            <h1>Espresso</h1>
+                        </div>
+                        <div class="coffee-image">
+                            <img src="assets/media/coffee-images/espresso.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <p class="desc">
+                                A concentrated shot of coffee, the base for many drinks.
+                            </p>
+                            <p class="cost">P100</p>
+                        </div>
                     </div>
+
+                    <div class="product-card">
+                        <div class="coffee-name">
+                            <h1>Americano</h1>
+                        </div>
+                        <div class="coffee-image">
+                            <img src="assets/media/coffee-images/americano.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <p class="desc">
+                                Espresso diluted with hot water
+                            </p>
+                            <p class="cost">P100</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="coffee-name">
+                            <h1>Latte</h1>
+                        </div>
+                        <div class="coffee-image">
+                            <img src="assets/media/coffee-images/latte.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <p class="desc">
+                                Espresso with steamed milk and a small layer of foam
+                            </p>
+                            <p class="cost">P100</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="coffee-name">
+                            <h1>Cappuccino</h1>
+                        </div>
+                        <div class="coffee-image">
+                            <img src="assets/media/coffee-images/cappuccino.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <p class="desc">
+                                Equal parts espresso, steamed milk, and foam
+                            </p>
+                            <p class="cost">P100</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="coffee-name">
+                            <h1>Macchiato</h1>
+                        </div>
+                        <div class="coffee-image">
+                            <img src="assets/media/coffee-images/macchiato.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <p class="desc">
+                                Espresso "stained" with a small amount of milk or foam
+                            </p>
+                            <p class="cost">P100</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="coffee-name">
+                            <h1>Flat White</h1>
+                        </div>
+                        <div class="coffee-image">
+                            <img src="assets/media/coffee-images/flatwhite.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <p class="desc">
+                                Espresso with a thin layer of steamed milk, less frothy than a latte
+                            </p>
+                            <p class="cost">P100</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="coffee-name">
+                            <h1>Mocha</h1>
+                        </div>
+                        <div class="coffee-image">
+                            <img src="assets/media/coffee-images/mocha.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <p class="desc">
+                                Espresso with a thin layer of steamed milk, less frothy than a latte.
+                            </p>
+                            <p class="cost">P100</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="coffee-name">
+                            <h1>Ristretto</h1>
+                        </div>
+                        <div class="coffee-image">
+                            <img src="assets/media/coffee-images/correto.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <p class="desc">
+                                A shorter, more concentrated espresso shot.
+                            </p>
+                            <p class="cost">P100</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="coffee-name">
+                            <h1>Red Eye</h1>
+                        </div>
+                        <div class="coffee-image">
+                            <img src="assets/media/coffee-images/redeye1.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <p class="desc">
+                                Coffee with a shot of espresso
+                            </p>
+                            <p class="cost">P100</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="coffee-name">
+                            <h1>Cortado</h1>
+                        </div>
+                        <div class="coffee-image">
+                            <img src="assets/media/coffee-images/lungo.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <p class="desc">
+                                Equal parts espresso and steamed milk.
+                            </p>
+                            <p class="cost">P100</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="coffee-name">
+                            <h1>Breve</h1>
+                        </div>
+                        <div class="coffee-image">
+                            <img src="assets/media/coffee-images/breve.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <p class="desc">
+                                Espresso with steamed half-and-half.
+                            </p>
+                            <p class="cost">P100</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="coffee-name">
+                            <h1>Galão</h1>
+                        </div>
+                        <div class="coffee-image">
+                            <img src="assets/media/coffee-images/galao.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <p class="desc">
+                                Espresso with foamed milk, similar to a latte but lighter
+                            </p>
+                            <p class="cost">P100</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="coffee-name">
+                            <h1>Doppio</h1>
+                        </div>
+                        <div class="coffee-image">
+                            <img src="assets/media/coffee-images/doppio.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <p class="desc">
+                                A double shot of espresso, a stronger and more robust flavor
+                            </p>
+                            <p class="cost">P100</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="coffee-name">
+                            <h1>Cortado</h1>
+                        </div>
+                        <div class="coffee-image">
+                            <img src="assets/media/coffee-images/cortado.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <p class="desc">
+                                Espresso with an equal amount of steamed milk
+                            </p>
+                            <p class="cost">P100</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="coffee-name">
+                            <h1>Bombón</h1>
+                        </div>
+                        <div class="coffee-image">
+                            <img src="assets/media/coffee-images/bombon.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <p class="desc">
+                                Espresso layered with sweetened condensed milk
+                            </p>
+                            <p class="cost">P100</p>
+                        </div>
+                    </div>
+
                 </div>
             </section>
             
@@ -169,62 +396,93 @@
                         <ul>
                             <li>
                                 <div class="item">
-                                    <div class="name">Monica Paula Pacino</div>
-                                    <div class="star">★★★★★</div>
+                                    ★★★★★
                                 </div>
                                 <div class="comment">
-                                    <p>Pwede na, pwede na kayong magsara</p>
+                                    Pwede na, pwede na kayong magsara
                                 </div>
+                                <div class="name">Monica Paula Pacino</div>
                             </li>
                             <li>
                                 <div class="item">
-                                    <div class="name">John Omar Nery</div>
-                                    <div class="star">★★★★★</div>
+                                    ★★★★★
                                 </div>
                                 <div class="comment">
-                                    <p>Five star kase trip ko lang</p>
+                                    Five star kase trip ko lang
                                 </div>
+                                <div class="name">John Omar Nery</div>
                             </li>
                             <li>
                                 <div class="item">
-                                    <div class="name">Stephanie Velarde</div>
-                                    <div class="star">★★</div>
+                                    ★★
                                 </div>
                                 <div class="comment">
-                                    <p>👍 panget nung may-ari</p>
+                                    👍 panget nung may-ari
                                 </div>
+                                <div class="name">Stephanie Velarde</div>
                             </li>
                             <li>
                                 <div class="item">
-                                    <div class="name">Beverly Sarmiento</div>
-                                    <div class="star">★★★★★</div>
+                                    ★★★★★
                                 </div>
                                 <div class="comment">
-                                    <p>its okey</p>
+                                    its okey
                                 </div>
+                                <div class="name">Beverly Sarmiento</div>
                             </li>
                             <li>
                                 <div class="item">
-                                    <div class="name">Wella Montegrande</div>
-                                    <div class="star">★★★★★</div>
+                                    ★★★★★
                                 </div>
                                 <div class="comment">
-                                    <p>Binayaran po ako nung may-ari hahaha</p>
+                                    Binayaran po ako nung may-ari hahaha
                                 </div>
+                                <div class="name">Wella Montegrande</div>
                             </li>
                             <li>
                                 <div class="item">
-                                    <div class="name">Stephanie Alacron</div>
-                                    <div class="star">★</div>
+                                    ★
                                 </div>
                                 <div class="comment">
-                                    <p>Sobrang ganda</p>
+                                    Sobrang ganda
                                 </div>
+                                <div class="name">Stephanie Alacron</div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
+
+            <footer>
+                <div class="social-media">
+                    <div>
+                        <img src="assets/media/twitter.png" alt="">
+                        <img src="assets/media/facebook.png" alt="">
+                        <img src="assets/media/instagram.png" alt="">
+                        <img src="assets/media/youtube.png" alt="">
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div>
+                        Web Accessability
+                    </div>
+                    <div>
+                        Privacy Policy
+                    </div>
+                    <div>
+                        Terms of Use
+                    </div>
+                    <div>
+                        Site Map
+                    </div>
+                    <div>
+                        Cookie Preferences
+                    </div>
+                    <div>
+                        © 2022 Starbucks Coffee Company. All rights reserved.
+                    </div>
+                </div>
+            </footer>
         </main>
     </body>
     <script src="assets/js/script.js"></script>

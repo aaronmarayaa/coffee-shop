@@ -1,6 +1,5 @@
 .reviews-page {
     width: 100%;
-    
     padding-top: 7rem;
 }
 .reviews-page textarea { 
@@ -26,13 +25,44 @@
     border-radius: 0.5rem;
     color: var(--gc);
     font-size: larger;
+    transition: 400ms;
 }
-
-.reviews-page .ratings ul li {
-    border-bottom: 1px solid var(--tertiary);
-    padding: 1rem;
+.reviews-page .rate-card button:hover{
+    transform: scale(1.05);
+    transition: 400ms;
 }
 
 .reviews-page .ratings ul li .comment {
     margin: 1rem;
+}
+
+.reviews-page textarea{
+    width: 100%;
+}
+
+.ratings ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+.ratings ul li {
+    background-color: var(--tertiary);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    flex: 1;
+}
+
+.ratings ul li > div{
+    color: var(--gc);
+}
+.ratings ul li .name{
+    margin: 1rem 
+}
+.ratings ul li .item{
+    margin-bottom: 1rem;
+}
+.ratings ul li .comment{
+
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
