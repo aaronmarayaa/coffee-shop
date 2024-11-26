@@ -100,10 +100,6 @@ nav ul {
     padding-bottom: 5px;
 }
 
-.navMenu .nav-link.active {
-    color: var(--highlight);
-}
-
 .navMenu .nav-link.active::after {
     width: 100%;
 }
