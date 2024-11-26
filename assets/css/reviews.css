@@ -10,12 +10,12 @@
 }
 
 .reviews-page .rate-card .label label{
-    background-color: var(--tertiary);
-    color: var(--gc);
+    border-bottom: 2px solid var(--tertiary);
+    
     padding: 0.5rem;
     font-size: x-large;
     margin: 1rem;
-    border-radius: 0.5rem;
+    
 }
 .reviews-page .rate-card button{
     background-color: var(--tertiary);

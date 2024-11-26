@@ -26,3 +26,19 @@ footer .copyright {
 footer .copyright > div {
     margin: 1rem;
 }
+
+footer .media {
+    display: flex;
+    
+    width: 100%;
+}
+footer .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer .contacts > div{
+    margin: 1rem 5rem;
+}

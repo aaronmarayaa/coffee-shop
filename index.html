@@ -18,23 +18,48 @@
         <link rel="stylesheet" href="assets/css/shop.css">
 
         <link rel="stylesheet" href="assets/css/footer.css">
+        
+        <link rel="stylesheet" href="assets/css/login.css">
     </head>
     <body>
-        <div class="navbar"> <!--//tier-zero-->
-            <div class="burger" onclick="toggleMenu()">&#9776;</div>
-            <div class="title">Coffee Avenue.</div><!--title    -->
-            <nav id="navMenu" class="navMenu"> <!--card-->
+        <div id="navbar" class="navbar">
+            <div class="title">Coffee Avenue.</div>
+            <nav id="navMenu" class="navMenu">
                 <ul>
                     <li><a id="navhome" onclick="back()"   href="#home" class="nav-link active">Home</a></li>
                     <li><a id="navabout" onclick="back()"  href="#about" class="nav-link">About</a></li>
                     <li><a id="navshop" onclick="activeShop()"  href="#shop" class="nav-link">Shop</a></li>
                     <li><a id="navreviews" onclick="back()"  href="#reviews" class="nav-link">Reviews</a></li>
                     <li><a id="navcontacts" onclick="back()" href="#contacts" class="nav-link">Contacts</a></li>
+                    <li><a onclick="confirmLogout(event)" style="color: red;" href="">Log out</a></li>
                 </ul>
             </nav>
+            <div class="burger" onclick="toggleMenu()">&#9776;</div>
         </div>
         
-        <main>
+        <section id="login" class="login">
+            <div class="login-page">
+                
+                <h1>Welcome To Coffee Avenue</h1>
+                <form onsubmit="return login(event)" action="">
+                    <div>
+                        <input id="username" type="text" placeholder="Enter Username">
+                    </div>
+                    <div>
+                        <input id="password" type="password" placeholder="Enter Password">
+                        <div class="showPassword" id="showPassword">
+                            <input id="box" type="checkbox" onclick="visiblePassword()">
+                            <label for="box">Show Password</label>
+                        </div>
+                    </div>
+
+                    <input class="submitBtn" type="submit" value="submit" >
+                </form>
+            </div>
+        </section>
+        
+        <main id="main">
+
             <section id="home" class="home">
                 <div class="home-page">
                     <div class="cards">
@@ -61,7 +86,7 @@
                                         espresso serves as the base for many popular coffee drinks like lattes and cappuccinos.
                                     </div>
                                 </div>
-                                <div class="discover">
+                                <div class="discover" onclick="activeShop()">
                                     Discover Taste
                                 </div>
                             </div>
@@ -167,9 +192,9 @@
                         <div class="slider-container">
                             <input type="range" id="sizeSlider" class="slider" min="0" max="2" value="0">
                             <div class="slider-labels">
-                              <span id="label0">Tall</span>
-                              <span id="label1">Grande</span>
-                              <span id="label2">Venti</span>
+                              <span>Tall</span>
+                              <span>Grande</span>
+                              <span>Venti</span>
                             </div>
                         </div>
                         <div class="description">
@@ -190,9 +215,9 @@
                         <div class="slider-container">
                             <input type="range" id="sizeSlider" class="slider" min="0" max="2" value="0">
                             <div class="slider-labels">
-                              <span id="label0">Tall</span>
-                              <span id="label1">Grande</span>
-                              <span id="label2">Venti</span>
+                              <span>Tall</span>
+                              <span>Grande</span>
+                              <span>Venti</span>
                             </div>
                         </div>
                         <div class="description">
@@ -213,9 +238,9 @@
                         <div class="slider-container">
                             <input type="range" id="sizeSlider" class="slider" min="0" max="2" value="0">
                             <div class="slider-labels">
-                              <span id="label0">Tall</span>
-                              <span id="label1">Grande</span>
-                              <span id="label2">Venti</span>
+                              <span>Tall</span>
+                              <span>Grande</span>
+                              <span>Venti</span>
                             </div>
                         </div>
                         <div class="description">
@@ -236,9 +261,9 @@
                         <div class="slider-container">
                             <input type="range" id="sizeSlider" class="slider" min="0" max="2" value="0">
                             <div class="slider-labels">
-                              <span id="label0">Tall</span>
-                              <span id="label1">Grande</span>
-                              <span id="label2">Venti</span>
+                              <span>Tall</span>
+                              <span>Grande</span>
+                              <span>Venti</span>
                             </div>
                         </div>
                         <div class="description">
@@ -259,9 +284,9 @@
                         <div class="slider-container">
                             <input type="range" id="sizeSlider" class="slider" min="0" max="2" value="0">
                             <div class="slider-labels">
-                              <span id="label0">Tall</span>
-                              <span id="label1">Grande</span>
-                              <span id="label2">Venti</span>
+                              <span>Tall</span>
+                              <span>Grande</span>
+                              <span>Venti</span>
                             </div>
                         </div>
                         <div class="description">
@@ -282,9 +307,9 @@
                         <div class="slider-container">
                             <input type="range" id="sizeSlider" class="slider" min="0" max="2" value="0">
                             <div class="slider-labels">
-                              <span id="label0">Tall</span>
-                              <span id="label1">Grande</span>
-                              <span id="label2">Venti</span>
+                              <span>Tall</span>
+                              <span>Grande</span>
+                              <span>Venti</span>
                             </div>
                         </div>
                         <div class="description">
@@ -305,9 +330,9 @@
                         <div class="slider-container">
                             <input type="range" id="sizeSlider" class="slider" min="0" max="2" value="0">
                             <div class="slider-labels">
-                              <span id="label0">Tall</span>
-                              <span id="label1">Grande</span>
-                              <span id="label2">Venti</span>
+                              <span>Tall</span>
+                              <span>Grande</span>
+                              <span>Venti</span>
                             </div>
                         </div>
                         <div class="description">
@@ -328,9 +353,9 @@
                         <div class="slider-container">
                             <input type="range" id="sizeSlider" class="slider" min="0" max="2" value="0">
                             <div class="slider-labels">
-                              <span id="label0">Tall</span>
-                              <span id="label1">Grande</span>
-                              <span id="label2">Venti</span>
+                              <span>Tall</span>
+                              <span>Grande</span>
+                              <span>Venti</span>
                             </div>
                         </div>
                         <div class="description">
@@ -351,9 +376,9 @@
                         <div class="slider-container">
                             <input type="range" id="sizeSlider" class="slider" min="0" max="2" value="0">
                             <div class="slider-labels">
-                              <span id="label0">Tall</span>
-                              <span id="label1">Grande</span>
-                              <span id="label2">Venti</span>
+                              <span>Tall</span>
+                              <span>Grande</span>
+                              <span>Venti</span>
                             </div>
                         </div>
                         <div class="description">
@@ -374,9 +399,9 @@
                         <div class="slider-container">
                             <input type="range" id="sizeSlider" class="slider" min="0" max="2" value="0">
                             <div class="slider-labels">
-                              <span id="label0">Tall</span>
-                              <span id="label1">Grande</span>
-                              <span id="label2">Venti</span>
+                              <span>Tall</span>
+                              <span>Grande</span>
+                              <span>Venti</span>
                             </div>
                         </div>
                         <div class="description">
@@ -397,9 +422,9 @@
                         <div class="slider-container">
                             <input type="range" id="sizeSlider" class="slider" min="0" max="2" value="0">
                             <div class="slider-labels">
-                              <span id="label0">Tall</span>
-                              <span id="label1">Grande</span>
-                              <span id="label2">Venti</span>
+                              <span>Tall</span>
+                              <span>Grande</span>
+                              <span>Venti</span>
                             </div>
                         </div>
                         <div class="description">
@@ -420,9 +445,9 @@
                         <div class="slider-container">
                             <input type="range" id="sizeSlider" class="slider" min="0" max="2" value="0">
                             <div class="slider-labels">
-                              <span id="label0">Tall</span>
-                              <span id="label1">Grande</span>
-                              <span id="label2">Venti</span>
+                              <span>Tall</span>
+                              <span>Grande</span>
+                              <span>Venti</span>
                             </div>
                         </div>
                         <div class="description">
@@ -443,9 +468,9 @@
                         <div class="slider-container">
                             <input type="range" id="sizeSlider" class="slider" min="0" max="2" value="0">
                             <div class="slider-labels">
-                              <span id="label0">Tall</span>
-                              <span id="label1">Grande</span>
-                              <span id="label2">Venti</span>
+                              <span>Tall</span>
+                              <span>Grande</span>
+                              <span>Venti</span>
                             </div>
                         </div>
                         <div class="description">
@@ -466,9 +491,9 @@
                         <div class="slider-container">
                             <input type="range" id="sizeSlider" class="slider" min="0" max="2" value="0">
                             <div class="slider-labels">
-                              <span id="label0">Tall</span>
-                              <span id="label1">Grande</span>
-                              <span id="label2">Venti</span>
+                              <span>Tall</span>
+                              <span>Grande</span>
+                              <span>Venti</span>
                             </div>
                         </div>
                         <div class="description">
@@ -489,9 +514,9 @@
                         <div class="slider-container">
                             <input type="range" id="sizeSlider" class="slider" min="0" max="2" value="0">
                             <div class="slider-labels">
-                              <span id="label0">Tall</span>
-                              <span id="label1">Grande</span>
-                              <span id="label2">Venti</span>
+                              <span>Tall</span>
+                              <span>Grande</span>
+                              <span>Venti</span>
                             </div>
                         </div>
                         <div class="description">
@@ -575,11 +600,24 @@
 
             <footer id="contacts">
                 <div class="social-media">
-                    <div>
-                        <img src="assets/media/twitter.png" alt="">
-                        <img src="assets/media/facebook.png" alt="">
-                        <img src="assets/media/instagram.png" alt="">
-                        <img src="assets/media/youtube.png" alt="">
+                    <div class="media">
+                        <div>
+                            <img src="assets/media/twitter.png" alt="">
+                            <img src="assets/media/facebook.png" alt="">
+                            <img src="assets/media/instagram.png" alt="">
+                            <img src="assets/media/youtube.png" alt="">
+                        </div>
+                        <div class="contacts">
+                            <div>
+                                coffeeavenue@gmail.com
+                            </div>
+                            <div>
+                                coffeeavenue.com
+                            </div>
+                            <div>
+                                tel: 02-0000
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="copyright">
@@ -599,7 +637,7 @@
                         Cookie Preferences
                     </div>
                     <div>
-                        © 2022 Starbucks Coffee Company. All rights reserved.
+                        © 2022 Coffee Avene. All rights reserved.
                     </div>
                 </div>
             </footer>

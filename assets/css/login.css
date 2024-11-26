@@ -1,0 +1,50 @@
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    background-image: url('/assets/media/btg\(1\).jpg');
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.login .login-page{
+    text-align: center;
+    padding: 4rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary);
+}
+
+.login .login-page h1{
+    color: var(--gc);
+    font-size: 2rem;
+}
+
+.login form > div{
+    margin: 2rem 0;
+}
+
+.login form > div > input{
+    padding: 2rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+}
+.login form .submitBtn{
+    background-color: var(--gc);
+    color: var(--tertiary);
+    border-radius: 0.5rem;
+    border: none;
+    padding: 1rem;
+    width: 50%;
+}
+
+.login .login-page .showPassword {
+    margin: 0.5rem;
+}
+.login .login-page .showPassword label{
+    color: var(--gc);
+}

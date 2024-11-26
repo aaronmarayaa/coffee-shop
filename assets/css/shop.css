@@ -58,14 +58,20 @@
     border-radius: 0.5rem;
     outline: 3px solid var(--tertiary);
 }
+
 .product-card .coffee-image img{
     width: 100%;
+}
+
+.product-card .slider-container input{
+    background-color: var;
 }
 
 .product-card .slider-container {
     margin: 50px auto;
     text-align: center;
 }
+
 .product-card .slider-labels {
     display: flex;
     justify-content: space-between;
