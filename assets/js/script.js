@@ -1,15 +1,3 @@
-function toggleMenu() {
-    const navMenu = document.getElementById('navMenu');
-    const burger = document.querySelector('.burger');
-    navMenu.classList.toggle('show');
-
-    if (navMenu.classList.contains('show')) {
-        burger.innerHTML = '&times;';
-    } else {
-        burger.innerHTML = '&#9776;';
-    }
-}
-
 let home = document.getElementById('home')
 let about = document.getElementById('about')
 let shop = document.getElementById('shop')
@@ -18,7 +6,6 @@ let contacts = document.getElementById('contacts')
 let navbar = document.getElementById('navbar')
 let main = document.getElementById('main')
 let login_ = document.getElementById('login')
-
 
 correctUsername = "admin"
 correctPassword = "admin"
@@ -46,6 +33,27 @@ function login(event) {
     }
 }
 
+function visiblePassword() {
+    const passwordField = document.getElementById("password");
+    if (passwordField.type === "password") {
+      passwordField.type = "text";
+    } else {
+      passwordField.type = "password";
+    }
+  }
+
+function toggleMenu() {
+    const navMenu = document.getElementById('navMenu');
+    const burger = document.querySelector('.burger');
+    navMenu.classList.toggle('show');
+
+    if (navMenu.classList.contains('show')) {
+        burger.innerHTML = '&times;';
+    } else {
+        burger.innerHTML = '&#9776;';
+    }
+}
+
 function confirmLogout(event) {
     event.preventDefault();
 
@@ -56,15 +64,6 @@ function confirmLogout(event) {
         login_.style.display = "flex"
     }
 }
-
-function visiblePassword() {
-    const passwordField = document.getElementById("password");
-    if (passwordField.type === "password") {
-      passwordField.type = "text";
-    } else {
-      passwordField.type = "password";
-    }
-  }
 
 function activeShop() {
     shop.style.display = "block"

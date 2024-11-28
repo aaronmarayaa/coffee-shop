@@ -22,21 +22,6 @@
         <link rel="stylesheet" href="assets/css/login.css">
     </head>
     <body>
-        <div id="navbar" class="navbar">
-            <div class="title">Coffee Avenue.</div>
-            <nav id="navMenu" class="navMenu">
-                <ul>
-                    <li><a id="navhome" onclick="back()"   href="#home" class="nav-link active">Home</a></li>
-                    <li><a id="navabout" onclick="back()"  href="#about" class="nav-link">About</a></li>
-                    <li><a id="navshop" onclick="activeShop()"  href="#shop" class="nav-link">Shop</a></li>
-                    <li><a id="navreviews" onclick="back()"  href="#reviews" class="nav-link">Reviews</a></li>
-                    <li><a id="navcontacts" onclick="back()" href="#contacts" class="nav-link">Contacts</a></li>
-                    <li><a onclick="confirmLogout(event)" style="color: red;" href="">Log out</a></li>
-                </ul>
-            </nav>
-            <div class="burger" onclick="toggleMenu()">&#9776;</div>
-        </div>
-        
         <section id="login" class="login">
             <div class="login-page">
                 
@@ -57,6 +42,21 @@
                 </form>
             </div>
         </section>
+
+        <div id="navbar" class="navbar">
+            <div class="title">Coffee Avenue.</div>
+            <nav id="navMenu" class="navMenu">
+                <ul>
+                    <li><a id="navhome" onclick="back()"   href="#home" class="nav-link active">Home</a></li>
+                    <li><a id="navabout" onclick="back()"  href="#about" class="nav-link">About</a></li>
+                    <li><a id="navshop" onclick="activeShop()"  href="#shop" class="nav-link">Shop</a></li>
+                    <li><a id="navreviews" onclick="back()"  href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a id="navcontacts" onclick="back()" href="#contacts" class="nav-link">Contacts</a></li>
+                    <li><a onclick="confirmLogout(event)" style="color: red;" href="">Log out</a></li>
+                </ul>
+            </nav>
+            <div class="burger" onclick="toggleMenu()">&#9776;</div>
+        </div>
         
         <main id="main">
 
