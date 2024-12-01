@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
     background-image: url('/assets/media/btg\(1\).jpg');
     background-size: cover;
     min-height: 100vh;
@@ -33,9 +32,9 @@
     border: none;
     font-size: 1rem;
 }
+
 .login form .submitBtn{
     background-color: var(--gc);
-    color: var(--tertiary);
     border-radius: 0.5rem;
     border: none;
     padding: 1rem;

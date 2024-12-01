@@ -7,8 +7,8 @@ let navbar = document.getElementById('navbar')
 let main = document.getElementById('main')
 let login_ = document.getElementById('login')
 
-correctUsername = "admin"
-correctPassword = "admin"
+let correctUsername = "admin"
+let correctPassword = "admin"
 
 function signin() {
     let username = document.getElementById('username')
